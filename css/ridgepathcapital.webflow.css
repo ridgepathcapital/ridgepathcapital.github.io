@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: Lusitana, sans-serif;
   color: #333;
   font-size: 16px;
   line-height: 22px;
@@ -17,6 +17,7 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 10px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
@@ -26,9 +27,10 @@ h2 {
 h3 {
   margin-top: 0px;
   margin-bottom: 15px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
   font-size: 22px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h4 {
@@ -128,8 +130,11 @@ a {
   left: 0px;
   top: 0px;
   right: 0px;
-  background-color: #fff;
+  background-color: hsla(0, 0%, 100%, .85);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, .13);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .nav-link {
@@ -137,6 +142,10 @@ a {
   box-shadow: inset 0 3px 0 0 transparent;
   -webkit-transition: box-shadow 500ms ease, color 300ms ease;
   transition: box-shadow 500ms ease, color 300ms ease;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
 }
 
 .nav-link:hover {
@@ -150,7 +159,6 @@ a {
 
 .nav-link.login {
   opacity: 0.65;
-  font-weight: 400;
   text-decoration: none;
 }
 
@@ -170,7 +178,7 @@ a {
   display: block;
   height: 100vh;
   margin-top: 0px;
-  background-image: url('../images/Ridge Path Blue Optimized.jpg');
+  background-image: url('../images/Ridge-Path-Blue-Optimized.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
@@ -206,6 +214,8 @@ a {
 }
 
 .section.purple {
+  padding-top: 78px;
+  padding-bottom: 78px;
   background-color: #fff;
 }
 
@@ -226,9 +236,61 @@ a {
 }
 
 .section.vision {
-  height: 100vh;
-  min-height: 740px;
-  padding-top: 17.5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, hsla(79, 12%, 55%, .24), hsla(79, 12%, 55%, .24)), url('../images/White-Paper-Optimized.jpg');
+  background-image: linear-gradient(180deg, hsla(79, 12%, 55%, .24), hsla(79, 12%, 55%, .24)), url('../images/White-Paper-Optimized.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, 600px;
+}
+
+.section.quote {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background-color: #4b6375;
+}
+
+.section.culture {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .24), rgba(0, 0, 0, .24)), url('../images/world-map.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .24), rgba(0, 0, 0, .24)), url('../images/world-map.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.section.asset-allocation {
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Earth-From-Space-optitmized.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Earth-From-Space-optitmized.jpg');
+  background-position: 0px 0px, 50% 0px;
+  background-size: auto, cover;
+  background-repeat: repeat, repeat;
+}
+
+.section.estate-planning {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #92977e;
+}
+
+.section.technology {
+  min-height: 100vh;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, rgba(51, 67, 75, .96), rgba(51, 67, 75, .96)), url('../images/Computer-code.jpg');
+  background-image: linear-gradient(180deg, rgba(51, 67, 75, .96), rgba(51, 67, 75, .96)), url('../images/Computer-code.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+}
+
+.section.contact {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/Map-with-marker-darkened-optimized.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .slider {
@@ -372,10 +434,11 @@ a {
 
 .section-subtitle {
   margin-bottom: 68px;
-  font-size: 19px;
-  line-height: 22px;
+  font-family: Lusitana, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
 }
 
 .bold-text {
@@ -530,6 +593,10 @@ a {
   right: 4px;
   bottom: 5px;
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  clear: none;
 }
 
 .team-profile-pic {
@@ -548,20 +615,29 @@ a {
 .team-profile-name {
   display: block;
   margin-bottom: 0px;
+  font-family: Lusitana, sans-serif;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 400;
   text-align: center;
   text-transform: none;
 }
 
 .team-profile-title {
-  height: 44px;
-  font-weight: 400;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
   text-align: center;
 }
 
 .team-profile-bio {
   margin-top: 21px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
 }
 
 .services-image {
@@ -583,6 +659,17 @@ a {
 
 .services-paragraph {
   display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.contact-map {
+  position: static;
+  display: block;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  color: #4b6375;
+  font-weight: 300;
 }
 
 .hero-tagline {
@@ -619,11 +706,22 @@ a {
 }
 
 .centered {
+  margin-bottom: 13px;
+  font-size: 26px;
+  line-height: 37.5px;
   text-align: center;
 }
 
 .centered.vision {
   margin-bottom: 50px;
+}
+
+.centered.small {
+  margin-bottom: 20px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
 }
 
 .container-vision {
@@ -632,7 +730,149 @@ a {
 }
 
 .disclaimer {
-  padding-top: 33px;
+  padding-top: 0px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.vision-header {
+  margin-bottom: 26px;
+  font-family: Lusitana, sans-serif;
+  color: #4b6375;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.vision-header.large {
+  font-size: 39px;
+  line-height: 52px;
+}
+
+.vision-body {
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.vision-container {
+  display: block;
+  min-height: 100vh;
+  padding-top: 23vh;
+  padding-right: 104px;
+  padding-left: 104px;
+}
+
+.vision-container.global-asset-allocation {
+  padding-top: 19vh;
+}
+
+.vision-container.technology {
+  padding-top: 14vh;
+}
+
+.vision-container.contact {
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+.serif-header {
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.serif-header.white {
+  color: hsla(0, 0%, 100%, .9);
+  font-size: 22px;
+  line-height: 32.5px;
+}
+
+.serif-header.white.large {
+  margin-bottom: 25px;
+  font-size: 39px;
+  line-height: 52px;
+}
+
+.culture-header {
+  margin-bottom: 25px;
+  font-family: Lusitana, sans-serif;
+  color: #fff;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.culture-header.large {
+  font-size: 39px;
+  line-height: 52px;
+}
+
+.culture-header.large.contact {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+
+.culture-body {
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  color: hsla(0, 0%, 100%, .9);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.culture-body.asset-allocation {
+  margin-bottom: 25px;
+}
+
+.image-centered {
+  display: block;
+  max-width: 460px;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row-contact {
+  margin-top: 50px;
+}
+
+.contact-title {
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  color: #ddd;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact-element {
+  margin-bottom: 12.5px;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  color: #ddd;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact-map-left {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 
 html.w-mod-js *[data-ix="fade-in-on-load"] {
@@ -716,6 +956,13 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   .main-image {
     margin-top: 49px;
   }
+  .team-profile-bio {
+    font-size: 18px;
+  }
+  .vision-container {
+    padding-right: 78px;
+    padding-left: 78px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -781,12 +1028,25 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   .contact-map {
     margin-bottom: 28px;
   }
+  .vision-container {
+    padding-top: 10vh;
+    padding-right: 52px;
+    padding-left: 52px;
+  }
 }
 
 @media (max-width: 479px) {
-  .section.vision {
-    height: 1400px;
-    min-height: 0px;
+  .nav-link.menu {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .section.purple {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .section.asset-allocation {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .client-logo {
     width: 33.33%;
@@ -794,8 +1054,35 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   .press-logo {
     width: 28%;
   }
+  .team-row {
+    padding-top: 0px;
+  }
   .contact-map {
     margin-bottom: 28px;
   }
+  .vision-container {
+    padding: 26px;
+  }
+  .vision-container.global-asset-allocation {
+    padding-top: 26px;
+  }
+  .vision-container.technology {
+    padding-top: 26px;
+  }
+  .image-centered {
+    max-width: 100%;
+  }
 }
 
+@font-face {
+  font-family: 'ARS Marquette Pro';
+  src: url('../fonts/ARSMAQUETTEPRO-LIGHT.OTF') format('undefined'), url('../fonts/ARSMaquettePro-Light.eot') format('embedded-opentype'), url('../fonts/ARSMaquettePro-Light.woff') format('woff'), url('../fonts/ARSMaquettePro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ARS Marquette Pro';
+  src: url('../fonts/ARSMAQUETTEPRO-MEDIUM.OTF') format('undefined'), url('../fonts/ARSMaquettePro-Medium.eot') format('embedded-opentype'), url('../fonts/ARSMaquettePro-Medium.woff') format('woff'), url('../fonts/ARSMaquettePro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
