@@ -274,7 +274,6 @@ a {
 }
 
 .section.technology {
-  min-height: 100vh;
   padding-top: 0px;
   padding-bottom: 0px;
   background-image: -webkit-linear-gradient(270deg, rgba(51, 67, 75, .96), rgba(51, 67, 75, .96)), url('../images/Computer-code.jpg');
@@ -637,7 +636,7 @@ a {
   font-size: 18px;
   line-height: 26px;
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
 }
 
 .services-image {
@@ -736,6 +735,7 @@ a {
   line-height: 20px;
   font-style: normal;
   font-weight: 300;
+  text-align: justify;
 }
 
 .vision-header {
@@ -846,6 +846,7 @@ a {
 }
 
 .contact-title {
+  margin-bottom: 13px;
   font-family: 'ARS Marquette Pro', Arial, sans-serif;
   color: #ddd;
   font-size: 18px;
@@ -855,7 +856,7 @@ a {
 }
 
 .contact-element {
-  margin-bottom: 12.5px;
+  margin-bottom: 6.5px;
   font-family: 'ARS Marquette Pro', Arial, sans-serif;
   color: #ddd;
   font-size: 18px;
@@ -865,6 +866,7 @@ a {
 }
 
 .contact-map-left {
+  margin-top: 19.5px;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-transform: rotate(0deg);
@@ -873,6 +875,54 @@ a {
   -webkit-transform-origin: 0% 50%;
   -ms-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+}
+
+.contact-map-right {
+  margin-top: 19.5px;
+}
+
+.centered-button {
+  display: block;
+  width: 150px;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2px solid #4b6375;
+  border-radius: 6px;
+  background-color: transparent;
+  font-family: 'ARS Marquette Pro', Arial, sans-serif;
+  color: #4b6375;
+  font-weight: 300;
+  text-align: center;
+}
+
+.centered-button:hover {
+  background-color: #4b6375;
+  color: #fff;
+}
+
+.centered-button.inverted {
+  border-color: #fff;
+  color: #fff;
+}
+
+.centered-button.inverted:hover {
+  background-color: #fff;
+  color: #4b6375;
+}
+
+.centered-button.inverted.w--current {
+  border-color: #fff;
+  color: #fff;
+}
+
+.centered-button.inverted.w--current:hover {
+  background-color: #fff;
+  color: #4b6375;
 }
 
 html.w-mod-js *[data-ix="fade-in-on-load"] {
@@ -956,8 +1006,17 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   .main-image {
     margin-top: 49px;
   }
+  .team-row {
+    padding-top: 0px;
+  }
   .team-profile-bio {
     font-size: 18px;
+  }
+  .profile-column {
+    margin-bottom: 56px;
+  }
+  .vision-header.large {
+    margin-bottom: 52px;
   }
   .vision-container {
     padding-right: 78px;
@@ -1022,6 +1081,9 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   .team-profile-bio {
     margin-bottom: 56px;
   }
+  .profile-column {
+    margin-bottom: 0px;
+  }
   .services-image {
     margin-bottom: 28px;
   }
@@ -1033,6 +1095,15 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
     padding-right: 52px;
     padding-left: 52px;
   }
+  .contact-title {
+    text-align: left;
+  }
+  .contact-element {
+    text-align: left;
+  }
+  .contact-map-left {
+    margin-bottom: 52px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1041,8 +1112,9 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
     padding-bottom: 22px;
   }
   .section.purple {
+    margin-bottom: -26px;
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 0px;
   }
   .section.asset-allocation {
     padding-top: 0px;
@@ -1071,6 +1143,12 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
   }
   .image-centered {
     max-width: 100%;
+  }
+  .contact-title {
+    text-align: left;
+  }
+  .contact-element {
+    text-align: left;
   }
 }
 
