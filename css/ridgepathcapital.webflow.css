@@ -1032,8 +1032,8 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
     margin-top: 15px;
   }
   .nav-link.menu {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
   .section {
     padding-top: 43px;
@@ -1041,7 +1041,7 @@ html.w-mod-js *[data-ix="zoom-in-on-scroll-delayed"] {
     text-align: center;
   }
   .section.main {
-    margin-top: 74px;
+    margin-top: 0px;
     padding-top: 0px;
   }
   .nav-menu {
