@@ -76,7 +76,7 @@ a {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .12);
   -webkit-transition: background-color 300ms ease, box-shadow 300ms ease, color 300ms ease;
   transition: background-color 300ms ease, box-shadow 300ms ease, color 300ms ease;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto Slab';
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -110,7 +110,7 @@ a {
 
 .logo-text {
   margin-top: 24px;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto Slab';
   color: #1c1c1c;
   font-size: 27px;
   font-weight: 500;
@@ -340,7 +340,7 @@ a {
 
 .footer-title {
   margin-top: 0px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed';
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -515,7 +515,7 @@ a {
 
 .testimony-text {
   margin-bottom: 21px;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto Slab';
   font-size: 25px;
   line-height: 31px;
   font-weight: 300;
@@ -600,11 +600,14 @@ a {
 
 .team-profile-pic {
   display: block;
-  width: 200px;
+  max-width: 260px;
   margin-right: auto;
   margin-bottom: 28px;
   margin-left: auto;
-  border-radius: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .23);
+  border-radius: 13px;
 }
 
 .team-row {
@@ -632,6 +635,7 @@ a {
 
 .team-profile-bio {
   margin-top: 21px;
+  border: 1px none #000;
   font-family: 'ARS Marquette Pro', Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
