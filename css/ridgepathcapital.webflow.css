@@ -599,7 +599,7 @@ a {
 }
 
 .team-profile-pic {
-  display: none;
+  display: block;
   max-width: 260px;
   margin-right: auto;
   margin-bottom: 28px;
