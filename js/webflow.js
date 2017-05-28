@@ -1476,7 +1476,8 @@
     var google = null;
     var $maps;
     var namespace = '.w-widget-map';
-    var apiKey = 'AIzaSyBks0W0NawnPju70JQS5XXPOTTrguDQjWE';
+    // The API key is injected here from the Webflow Integrations tab on the site's dashboard
+    var googleMapsApiKey = 'AIzaSyAI67jz0ibmVpBgOR1m6L8LpgcB_6zhqXY';
 
     // -----------------------------------
     // Module methods
@@ -1496,7 +1497,7 @@
       if (!$maps.length) return;
 
       if (google === null) {
-        $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=_wf_maps_loaded&key=' + apiKey);
+        $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=_wf_maps_loaded&key=' + googleMapsApiKey);
         window._wf_maps_loaded = mapsLoaded;
       } else {
         mapsLoaded();

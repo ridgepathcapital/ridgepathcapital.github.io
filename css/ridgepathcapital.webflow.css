@@ -777,8 +777,20 @@ a {
   padding-top: 19vh;
 }
 
+.vision-container.global-asset-allocation.smaller {
+  min-height: 0vh;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .vision-container.technology {
   padding-top: 14vh;
+}
+
+.vision-container.technology.smaller {
+  min-height: 0vh;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .vision-container.contact {
@@ -824,6 +836,10 @@ a {
   width: 100%;
 }
 
+.culture-header.smaller {
+  margin-bottom: 0px;
+}
+
 .culture-body {
   font-family: 'ARS Marquette Pro', Arial, sans-serif;
   color: hsla(0, 0%, 100%, .9);
@@ -837,10 +853,14 @@ a {
   margin-bottom: 25px;
 }
 
+.culture-body.margin-top {
+  margin-top: 26px;
+}
+
 .image-centered {
   display: block;
   max-width: 460px;
-  margin-top: 39px;
+  margin-top: 26px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -927,6 +947,19 @@ a {
 .centered-button.inverted.w--current:hover {
   background-color: #fff;
   color: #4b6375;
+}
+
+.biox {
+  display: block;
+  width: 312px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hsla(0, 0%, 100%, .5);
+  border-radius: 13px;
 }
 
 html.w-mod-js *[data-ix="fade-in-on-load"] {
